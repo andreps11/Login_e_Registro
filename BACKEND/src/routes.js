@@ -8,6 +8,7 @@ const routes = new Router();
 
 routes.post('/users', UserController.store);
 routes.post('/sessions', SessionController.store);
+routes.put('/users', UserController.updateSenha);
 
 routes.use(authMiddleware);
 
